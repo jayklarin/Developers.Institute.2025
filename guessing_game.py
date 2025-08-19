@@ -24,6 +24,8 @@ def number_guessing_game():
             print("📉 Too low! Try again.\n")
         else:
             print("📈 Too high! Try again.\n")
+
+    # Runs only if no correct guess was made (loop finished without 'break')
     else:
         print(f"😢 Sorry, you ran out of attempts. The number was {secret_number}.")
 
