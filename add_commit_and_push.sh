@@ -7,6 +7,7 @@
 
 # Stage (add) all new and modified files
 # The '.' acts as a wildcard, meaning "everything in this folder and its subfolders."
+# Be sure to put a space between 'add' and '.'
 git add .
 
 # Create a commit (a snapshot of changes) with a message
