@@ -11,24 +11,27 @@ git init
 # even if a branch named 'main' already exists
 git branch -M main
 
-# Stage all files (the '.' means "everything in this folder")
+# Stage (add) all new and modified files
+# The '.' acts as a wildcard, meaning "everything in this folder and its subfolders."
+# Be sure to put a space between 'add' and '.'
 git add .
 
 # -m (LOWERCASE) = add a commit Message inline instead of opening an editor
-git commit -m "Initial commit"
+git commit -m "Initial commit" #GitHub requires a comment
 
 # Connect this local repo to the remote GitHub repository
-git remote add origin https://github.com/your-username/your-repo.git
+# - To find your repo link: go to the repo’s main page on GitHub →
+#   click the green "<> Code" button → copy the HTTPS URL.
+git remote add origin https_url_gets_pasted_here
 
 # Push the commit to GitHub, creating the 'main' branch there
 # -u sets upstream so future pushes can use just `git push`
 git push -u origin main
-
 
 # Here they are together
 git init
 git branch -M main
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/your-username/your-repo.git
+git remote add origin https_url_gets_pasted_here
 git push -u origin main
