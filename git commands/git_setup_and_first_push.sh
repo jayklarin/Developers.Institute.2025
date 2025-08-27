@@ -1,3 +1,14 @@
+# Let's understand this single command that combines multiple Git operations:
+git init && git branch -M main && git add . && git commit -m "Initial commit" && git remote add origin https://github.com/jayklarin/di_bootcamp.git && git push -u origin main
+
+# The above is these commands individually:
+git init
+git branch -M main
+git add .
+git commit -m "Initial commit"
+git remote add origin https_URL_GETS_PASTED_HERE # REPLACE with your repo URL
+git push -u origin main
+
 # Assumptions:
 # - You are in the correct project folder (via cd or "New Terminal at Folder").
 # - This folder is NOT yet a git repo (no .git folder).
@@ -22,16 +33,8 @@ git commit -m "Initial commit" #GitHub requires a comment
 # Connect this local repo to the remote GitHub repository
 # - To find your repo link: go to the repo’s main page on GitHub →
 #   click the green "<> Code" button → copy the HTTPS URL.
-git remote add origin https_url_gets_pasted_here
+git remote add origin https_URL_GETS_PASTED_HERE
 
 # Push the commit to GitHub, creating the 'main' branch there
 # -u sets upstream so future pushes can use just `git push`
-git push -u origin main
-
-# Here they are together
-git init
-git branch -M main
-git add .
-git commit -m "Initial commit"
-git remote add origin https_url_gets_pasted_here
 git push -u origin main
